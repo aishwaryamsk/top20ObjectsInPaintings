@@ -1,0 +1,96 @@
+#chart-container {
+    float: left;
+}
+
+#labelText {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+#labelSelectionText {
+    font-weight: 800;
+    font-size: 25px;
+}
+
+#frequencyPercentText {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+#labelText, #labelSelectionText, #frequencyPercentText {
+    font-family: 'Merienda One';
+}
+
+#title {
+    font-size: 27px;
+    font-weight: 800;
+    margin-top: 15px;
+    font-family: 'Merienda One';
+    text-align: center;
+}
+
+#art-title {
+    font-size: 24px;
+    font-weight: 800;
+    color: #6f4037;
+}
+
+#art-title {
+    font-family: 'Courgette';
+    text-align: center;
+}
+
+#artist, #date, #period, #labels {
+    font-family: 'Merienda One';
+    text-align: center;
+}
+
+#innerCurve, #labelText {
+    text-align: center;
+    cursor: pointer;
+}
+
+#art-details {
+    float: right;
+    height: 50vh;
+    width: calc(100% - 560px);
+    padding-top: 35px;
+}
+
+#art {
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin: 1em 0;
+}
+
+#art-image {
+    max-width: 100%;
+    max-height: 100%;
+    vertical-align: middle;
+}
+
+.art-info {
+    padding-top: 10px;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+@media (max-width: 800px) {
+    #chart-container {
+        float: none;
+        text-align: center;
+    }
+    #art-details {
+        min-width: 560px;
+        width: 100%;
+        float: left;
+        display: block;
+    }
+}
