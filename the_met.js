@@ -102,7 +102,7 @@ Promise.all([
 
   color = d3.scaleOrdinal()
     .domain(frequencyData.map(d => d.Label))
-    .range(d3.quantize(t => d3.interpolateRainbow(t * 0.7 + 0.1), frequencyData.length));
+    .range(d3.quantize(t => d3.interpolateBlues((1 - t) * 0.7 + 0.1), frequencyData.length));
 
   this.updateStrokeData(labelObjectIdsData, 0);
 
